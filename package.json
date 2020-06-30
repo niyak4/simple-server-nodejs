@@ -1,0 +1,24 @@
+{
+  "name": "train-node",
+  "version": "1.0.0",
+  "description": "Training some default Node functions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "study"
+  ],
+  "author": "Yaroslav Zaritsky <keyla.prezent@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
