@@ -7,22 +7,29 @@
   </head>
   <body>
     <header>
-      <section style="color: rgba(0, 0, 0, 0.5);">
-        <nav class="shift">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
-      </section>
+      <nav class="shift">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
       <h1>Home Page!</h1>
     </header>
     <main>
-      <div class="boxes">
-        <div class="pink box"></div>
-        <div class="lime box"></div>
-        <div class="blue box"></div>
+      <div class="boxes-section">
+        <p>Used flexbox for setting @media</p>
+        <div class="boxes">
+          <div class="pink box"></div>
+          <div class="lime box"></div>
+          <div class="blue box"></div>
+        </div>
       </div>
+      <form name="userInfo" action="/" method="POST">
+        <p>Send data to .txt file (Simple database example)</p>
+        <input type="text" name="id" placeholder="id" autocomplete="off">
+        <input type="text" name="name" placeholder="name" autocomplete="off">
+        <button>Add to DB</button>
+      </form>
     </main>
   </body>
 </html>

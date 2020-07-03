@@ -3,7 +3,9 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-color: #f1c40f;
+}
+header h1 {
+  margin-top: 0px;
 }
 nav {
   margin: 0 auto;
@@ -13,6 +15,7 @@ nav {
 nav ul {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 nav ul li {
   display: inline-block;
@@ -64,6 +67,10 @@ nav.shift ul li a:hover:after {
   height: 100%;
 }
 
+.boxes-section {
+  background-color: #f1c40f;
+  padding: 10px 0px 5px 0px;
+}
 .boxes {
   display: flex;
   flex-direction: row;
@@ -87,6 +94,45 @@ nav.shift ul li a:hover:after {
   background: blue;
   border: 10px solid SkyBlue;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3AFF96;
+  padding: 10px 0px 20px 0px;
+}
+form p, .boxes-section p {
+  color: #D4AC0D;
+  transition: 0.4s;
+}
+form p:hover, .boxes-section p:hover {
+  color: black;
+  text-decoration: underline;
+}
+input[type=text] {
+  height: 30px;
+  width: 220px;
+  margin-top: 10px;
+  border: 2px solid red;
+  transition: 0.4s ease-in-out;
+}
+form button {
+  margin-top: 10px;
+  width: 228px;
+  height: 30px;
+  border: 1px solid #555;
+  transition: 0.4s;
+}
+form button:hover {
+  background-color: #38FEBF;
+}
+input[type=text]:focus {
+  width: 330px;
+  border: 2px solid #555;
+}
+
 
 @media (max-width: 600px) {
   .boxes {
